@@ -1,11 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:nexus_legend/auth.dart';
 import 'Pages/home.dart';
+import 'Pages/login.dart';
 import 'Pages/search.dart';
 import 'Pages/info.dart';
 import 'Components/bottomNavigation.dart';
 import 'Pages/loading.dart';
+import 'firebase_options.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() => runApp(const MainApp());
+void main() async{
+WidgetsFlutterBinding.ensureInitialized();
+await Firebase.initializeApp(
+options: DefaultFirebaseOptions.currentPlatform,
+);
+runApp(const MainApp());}
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
@@ -18,7 +27,15 @@ class MainApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: Colors.transparent,
       ),
-      home: const LoadingPage(),
+      home: StreamBuilder(
+          stream: Auth().authStateChanges,
+          builder: (context, snapshot){
+            if(snapshot.hasData){
+              return LoadingPage();
+            }else{
+              return LoginPage();
+            }
+          }),
     );
   }
 }

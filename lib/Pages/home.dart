@@ -17,7 +17,7 @@ class Homepage extends StatelessWidget {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Color(0xFFFFFF),
+              Color(0xFFFFFFFF),
               Color(0xFF0D47A1),
             ],
           ),
