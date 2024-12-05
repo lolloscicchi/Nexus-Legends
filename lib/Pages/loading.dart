@@ -33,14 +33,14 @@ class _LoadingPageState extends State<LoadingPage> {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Color(0xFFFFFFFF),
-              Color(0xFF0D47A1),
+              Color(0xFF2A0080), // Viola scuro
+              Color(0xFF4B0082), // Indaco
             ],
           ),
         ),
         child: Center(
           child: Image.asset(
-            'Assets/logo_nexus.jpg',
+            'assets/logo_nexus.jpg',
             width: 200,
             height: 200,
           ),

@@ -1,3 +1,4 @@
+// home.dart
 import 'package:flutter/material.dart';
 import '../Components/header.dart';
 
@@ -17,19 +18,53 @@ class Homepage extends StatelessWidget {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Color(0xFFFFFFFF),
-              Color(0xFF0D47A1),
+              Color(0xFF2A0080), // Viola scuro
+              Color(0xFF4B0082), // Indaco
             ],
           ),
         ),
         child: Column(
           children: [
-            // Header
             Header(
               onMenuPressed: _handleMenuPressed,
             ),
-
-            // Card content
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.purple.withOpacity(0.3),
+                  borderRadius: BorderRadius.circular(25),
+                ),
+                child: Row(
+                  children: [
+                    const Expanded(
+                      child: TextField(
+                        style: TextStyle(color: Colors.white),
+                        decoration: InputDecoration(
+                          hintText: 'Search events',
+                          hintStyle: TextStyle(color: Colors.white60),
+                          prefixIcon: Icon(Icons.search, color: Colors.white),
+                          border: InputBorder.none,
+                          contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.only(right: 8.0),
+                      padding: const EdgeInsets.all(8.0),
+                      decoration: BoxDecoration(
+                        color: Colors.purple.withOpacity(0.3),
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: const Icon(
+                        Icons.tune,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
@@ -78,6 +113,7 @@ class Homepage extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16.0),
       ),
+      color: Color(0xFF2A0080).withOpacity(0.9),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -97,10 +133,16 @@ class Homepage extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 18.0,
                     fontWeight: FontWeight.bold,
+                    color: Colors.white,
                   ),
                 ),
                 const SizedBox(height: 8.0),
-                Text(description),
+                Text(
+                  description,
+                  style: const TextStyle(
+                    color: Colors.white70,
+                  ),
+                ),
               ],
             ),
           ),

@@ -12,8 +12,8 @@ class SearchPage extends StatelessWidget {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Color(0xFF1a1a1a),
-            Color(0xFF0D47A1),
+            Color(0xFF2A0080), // Viola scuro
+            Color(0xFF4B0082), // Indaco
           ],
         ),
       ),

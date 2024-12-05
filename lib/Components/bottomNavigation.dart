@@ -18,8 +18,8 @@ class BottomNavigation extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            Colors.black.withOpacity(0.8),
-            const Color(0xFF0D47A1).withOpacity(0.8),
+            Color(0xFF2A0080).withOpacity(0.8), // Viola scuro
+            Color(0xFF8A2BE2).withOpacity(0.8), // Viola brillante
           ],
         ),
       ),
@@ -41,7 +41,7 @@ class BottomNavigation extends StatelessWidget {
           ),
         ],
         currentIndex: selectedIndex,
-        selectedItemColor: Colors.white,
+        selectedItemColor: Color(0xFFEC9EF2),
         unselectedItemColor: Colors.white60,
         onTap: onItemTapped,
       ),

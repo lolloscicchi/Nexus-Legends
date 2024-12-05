@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "389109026175",
+    "project_id": "nexus-legend",
+    "storage_bucket": "nexus-legend.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389109026175:android:dc6ae76e86a2ec3f201e4a",
+        "android_client_info": {
+          "package_name": "com.example.nexus_legend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389109026175-3vcvhur6oj35rfj2dll4k4ahhie0034c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nexus_legend",
+            "certificate_hash": "58b34abaa9322ca2a3ff07ac7128306cfca4ad7c"
+          }
+        },
+        {
+          "client_id": "389109026175-0psv0edpjhs3e760c6gmo1rjrg5ck2rh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKSWWorCTFbpzaA7RZ6z29s49AsEOzY_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389109026175-0psv0edpjhs3e760c6gmo1rjrg5ck2rh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "389109026175-j06bfui4s6v8hcuigbi7jgkjk4p4gbqe.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.nexusLegend"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
