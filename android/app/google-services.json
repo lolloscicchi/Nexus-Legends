@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "235489332843",
+    "project_id": "nexus-legends-pro",
+    "storage_bucket": "nexus-legends-pro.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235489332843:android:e0f7c3e909bd05ec76ab2e",
+        "android_client_info": {
+          "package_name": "com.NexusLegends.mobileApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAPfRfUcbQgBDg0cFhz3pjFuhTfK1XAwA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
